@@ -44,74 +44,57 @@
 	.code-text {
 		@apply mb-3 inline-block text-xs text-code-text;
 	}
-
-	.btn {
-		@apply block py-2 px-4 rounded-md shadow-btn-shadow text-sm text-btn-text-gray bg-default;
-	}
-	.btn--hover {
-		@apply block py-2 px-4 rounded-md shadow-btn-shadow text-sm text-btn-text-gray bg-default-hover;
-	}
-
-	.btn--outline {
-		@apply shadow-none bg-transparent border border-primary text-primary;
-	}
-	.btn--outline--hover {
-		@apply shadow-none bg-light-blue border border-primary text-primary;
-	}
-
-	.btn--text {
-		@apply shadow-none bg-transparent text-primary;
-	}
-	.btn--text--hover {
-		@apply shadow-none bg-light-blue text-primary;
-	}
-
-	.btn--disable-shadow {
-		@apply shadow-none bg-primary text-white;
-	}
-
-	.btn--disabled {
-		@apply bg-default text-link;
-	}
-	.btn--text-disabled {
-		@apply bg-transparent text-link;
-	}
-
-	.btn--icon {
-		@apply flex items-center bg-primary text-white;
-	}
-
-	.btn--sm {
-		@apply bg-primary text-white py-[0.375rem] px-3;
-	}
-	.btn--md {
-		@apply bg-primary text-white;
-	}
-	.btn--lg {
-		@apply bg-primary text-white py-3 px-6;
-	}
-
-	.btn--primary {
-		@apply bg-primary text-white;
-	}
-	.btn--secondary {
-		@apply bg-secondary text-white;
-	}
-	.btn--danger {
-		@apply bg-danger text-white;
-	}
-
-	.btn--primary-hover {
-		@apply bg-primary-hover text-white;
-	}
-	.btn--secondary-hover {
-		@apply bg-secondary-hover text-white;
-	}
-	.btn--danger-hover {
-		@apply bg-danger-hover text-white;
-	}
 }
 
 @layer utilities /* series of utilities class (ex: pt, mt, shadow, grid-cols-2, etc...) */ {
 	/* Here you'll insert custom utilities classes (ex: .filter-none { filter: none; ) */
+}
+
+.btn {
+	@apply block py-2 px-4 rounded-md shadow-btn-shadow text-sm border-0;
+}
+
+.btn--sm {
+	@apply py-[0.375rem] px-3;
+}
+.btn--md {
+	@apply py-2 px-4;
+}
+.btn--lg {
+	@apply py-3 px-6;
+}
+
+.btn--default {
+	@apply bg-default text-btn-text-gray hover:bg-default-hover;
+}
+.btn--primary {
+	@apply bg-primary text-white hover:bg-primary-hover;
+}
+.btn--secondary {
+	@apply bg-secondary text-white hover:bg-secondary-hover;
+}
+.btn--danger {
+	@apply bg-danger text-white hover:bg-danger-hover;
+}
+
+.btn--outline {
+	@apply shadow-none bg-transparent border border-primary text-primary hover:bg-light-blue;
+}
+.btn--text {
+	@apply shadow-none bg-transparent text-primary hover:bg-light-blue;
+}
+
+.btn--disableShadow {
+	@apply shadow-none;
+}
+
+.btn--disabled {
+	@apply bg-default text-link pointer-events-none shadow-none cursor-default;
+}
+.btn--disabled-text {
+	@apply bg-transparent text-link pointer-events-none shadow-none cursor-default;
+}
+
+.btn--icon {
+	@apply flex items-center;
 }

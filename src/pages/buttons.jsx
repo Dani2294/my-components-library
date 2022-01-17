@@ -14,7 +14,7 @@ function Buttons() {
 					</div>
 					<div>
 						<code className='code-text'>{'&:hover, &:focus'}</code>
-						<Button hover={true} />
+						<Button />
 					</div>
 				</div>
 
@@ -26,7 +26,7 @@ function Buttons() {
 					</div>
 					<div>
 						<code className='code-text'>{'&:hover, &:focus'}</code>
-						<Button hover={true} variant='outline' />
+						<Button variant='outline' />
 					</div>
 				</div>
 
@@ -38,7 +38,7 @@ function Buttons() {
 					</div>
 					<div>
 						<code className='code-text'>{'&:hover, &:focus'}</code>
-						<Button hover={true} variant='text' />
+						<Button variant='text' />
 					</div>
 				</div>
 
@@ -46,7 +46,7 @@ function Buttons() {
 				<div className='flex space-x-20'>
 					<div>
 						<code className='code-text'>{'<Button disableShadow />'}</code>
-						<Button disableShadow={true} />
+						<Button color='primary' disableShadow />
 					</div>
 				</div>
 
@@ -68,15 +68,15 @@ function Buttons() {
 				<div className='flex space-x-28'>
 					<div>
 						<code className='code-text'>
-							{'<Button startIcon="local_grocery_store" />'}
+							{'<Button startIcon="add_shopping_car" />'}
 						</code>
-						<Button startIcon='local_grocery_store' />
+						<Button color='primary' startIcon='add_shopping_cart' />
 					</div>
 					<div>
 						<code className='code-text'>
-							{'<Button endIcon="local_grocery_store" />'}
+							{'<Button endIcon="add_shopping_car" />'}
 						</code>
-						<Button endIcon='local_grocery_store' />
+						<Button color='primary' endIcon='add_shopping_cart' />
 					</div>
 				</div>
 
@@ -84,15 +84,15 @@ function Buttons() {
 				<div className='flex space-x-20'>
 					<div>
 						<code className='code-text'>{'<Button size="sm" />'}</code>
-						<Button size='sm' />
+						<Button color='primary' size='sm' />
 					</div>
 					<div>
 						<code className='code-text'>{'<Button size="md" />'}</code>
-						<Button size='md' />
+						<Button color='primary' size='md' />
 					</div>
 					<div>
 						<code className='code-text'>{'<Button size="lg" />'}</code>
-						<Button size='lg' />
+						<Button color='primary' size='lg' />
 					</div>
 				</div>
 
@@ -100,36 +100,19 @@ function Buttons() {
 				<div className='flex space-x-20'>
 					<div>
 						<code className='code-text'>{'<Button color="default" />'}</code>
-						<Button color='default' />
+						<Button />
 					</div>
 					<div>
 						<code className='code-text'>{'<Button color="primary" />'}</code>
-						<Button color='primary' text='Primary' />
+						<Button color='primary' label='Primary' />
 					</div>
 					<div>
 						<code className='code-text'>{'<Button color="secondary" />'}</code>
-						<Button color='secondary' text='Secondary' />
+						<Button color='secondary' label='Secondary' />
 					</div>
 					<div>
 						<code className='code-text'>{'<Button color="danger" />'}</code>
-						<Button color='danger' text='Danger' />
-					</div>
-				</div>
-
-				{/* ====================================== */}
-				<div className='flex space-x-[9.5rem]'>
-					<div>
-						<code className='code-text'>{'&:hover, &:focus'}</code>
-						<Button hover={true} color='default' />
-					</div>
-					<div className='pt-9'>
-						<Button hover={true} color='primary' text='Primary' />
-					</div>
-					<div className='pt-9'>
-						<Button hover={true} color='secondary' text='Secondary' />
-					</div>
-					<div className='pt-9'>
-						<Button hover={true} color='danger' text='Danger' />
+						<Button color='danger' label='Danger' />
 					</div>
 				</div>
 			</div>

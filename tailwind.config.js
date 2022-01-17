@@ -33,12 +33,3 @@ module.exports = {
 	},
 	plugins: [],
 };
-
-/* 
-    --color-nav-bg: #fafbfd;
-		--color-title: #4f4f4f;
-		--color-link: #9e9e9e;
-		--color-link-active: #090f31;
-		--color-code-text: #333;
-		--color-btn-text-gray: #3f3f3f;
-*/
