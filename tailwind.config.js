@@ -25,6 +25,13 @@ module.exports = {
 				'secondary-hover': 'var(--color-bg-secondary-hover)',
 				danger: 'var(--color-bg-danger)',
 				'danger-hover': 'var(--color-bg-danger-hover)',
+
+				/* Inputs */
+				'input-text': 'var(--color-input-text)',
+				'input-placeholder': 'var(--color-input-placeholder)',
+				'input-border-focus': 'var(--color-input-border-focus)',
+				'input-border-error': 'var(--color-input-border-error)',
+				'input-bg-disabled': 'var(--color-input-bg-disabled)',
 			},
 			boxShadow: {
 				'btn-shadow': '0px 2px 3px rgba(51, 51, 51, 0.2)',

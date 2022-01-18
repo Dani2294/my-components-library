@@ -18,7 +18,7 @@
 		--color-code-text: #333;
 		--color-btn-text-gray: #3f3f3f;
 
-		/* btns bg color */
+		/* btns colors */
 		--color-bg-default: #e0e0e0;
 		--color-bg-default-hover: #aeaeae;
 
@@ -32,6 +32,15 @@
 
 		--color-bg-danger: #d32f2f;
 		--color-bg-danger-hover: #9a0007;
+
+		/* Inputs colors */
+		--color-input-text: #333;
+		--color-input-placeholder: #828282;
+
+		--color-input-border-focus: #2962ff;
+		--color-input-border-error: #d32f2f;
+
+		--color-input-bg-disabled: #f2f2f2;
 	}
 }
 
@@ -50,6 +59,7 @@
 	/* Here you'll insert custom utilities classes (ex: .filter-none { filter: none; ) */
 }
 
+/* ========== BUTTONS ========== */
 .btn {
 	@apply block py-2 px-4 rounded-md shadow-btn-shadow text-sm border-0;
 }
@@ -97,4 +107,33 @@
 
 .btn--icon {
 	@apply flex items-center;
+}
+
+/* ========== INPUTS ========== */
+
+.input {
+	@apply relative py-5 px-3 text-sm text-input-text placeholder:text-input-placeholder rounded-lg border border-input-placeholder group-hover:border-input-text focus:border-input-border-focus outline-none;
+}
+
+.input--error {
+	@apply border-input-border-error;
+}
+
+.input--disabled {
+	@apply bg-input-bg-disabled border-0 pointer-events-none cursor-auto;
+}
+
+.input--startIcon {
+	@apply pl-10;
+}
+.input--endIcon {
+	@apply pr-10;
+}
+
+.input--sm {
+	@apply py-2;
+}
+
+.textarea {
+	@apply inline-block relative py-5 px-3 text-input-text placeholder:text-input-placeholder rounded-lg border border-input-placeholder group-hover:border-input-text focus:border-input-border-focus outline-none;
 }
